@@ -1,0 +1,42 @@
+
+---
+
+## Task 2: AboutUs.jsx
+
+```jsx
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './AboutUs.css';
+
+const AboutUs = () => {
+  return (
+    <div className="about-us-container">
+      <div className="about-us-content">
+        <h1>About Paradise Nursery</h1>
+        <div className="company-info">
+          <p className="tagline">Bringing Nature to Your Doorstep Since 2020</p>
+          <p>
+            Paradise Nursery is your trusted destination for high-quality houseplants. 
+            We believe that every home deserves a touch of green, and we're here to 
+            help you find the perfect plants to transform your living spaces.
+          </p>
+          <p>
+            Our carefully curated collection features a wide variety of indoor plants, 
+            outdoor favorites, and low-maintenance succulents. Each plant is hand-picked 
+            and nurtured with love to ensure they arrive at your home healthy and ready to thrive.
+          </p>
+          <div className="mission-statement">
+            <h3>Our Mission</h3>
+            <p>
+              To make plant parenting accessible and enjoyable for everyone while 
+              promoting sustainable living and environmental consciousness.
+            </p>
+          </div>
+          <Link to="/" className="back-home-btn">Back to Home</Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AboutUs;
